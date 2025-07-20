@@ -15,6 +15,7 @@
         </label>
    </div>
    <input type="checkbox" id="nav-check" />
+   <label for="nav-check" class="overlay"></label>
    <nav class="navbar">
     <div class="navbar-header">
         <h3>ToastieTales</h3>
@@ -26,16 +27,17 @@
         </span>
     </div>
     <ul class="nav-items">
-        <li><a href="#" class ="nav-link">Home</a></li>
-        <li><a href="#" class ="nav-link">Features</a></li>
-        <li><a href="#" class ="nav-link">About</a></li>
-        <li><a href="#" class ="nav-link">Waffles</a></li>
-        <li><a href="#" class ="nav-link">Contact</a></li>
+        <li><a href="#hm" class ="nav-link">Home</a></li>
+        <li><a href="#feat" class ="nav-link">Features</a></li>
+        <li><a href="#ab" class ="nav-link">About</a></li>
+        <li><a href="#waf" class ="nav-link">Waffles</a></li>
+        <li><a href="#ser" class ="nav-link">Services</a></li>
+        <li><a href="#cont" class ="nav-link">Contact</a></li>
     </ul>
    </nav>
    <!---Navbar end-->
    <!--Header Start-->
-   <header class="header">
+   <header class="header" id="hm">
     <div class="banner">
         <h2>Discover The Secret To Taste</h2>
         <h1>ToastieTales</h1>
@@ -45,7 +47,7 @@
     <!--Header End-->
    <div class="content-dividor"></div>
     <!---Features start-->
-   <section class="features clearfix">
+   <section class="features clearfix" id="feat">
         <div class="feature">
             <span class="feature-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M640-440 474-602q-31-30-52.5-66.5T400-748q0-55 38.5-93.5T532-880q32 0 60 13.5t48 36.5q20-23 48-36.5t60-13.5q55 0 93.5 38.5T880-748q0 43-21 79.5T807-602L640-440Zm0-112 109-107q19-19 35-40.5t16-48.5q0-22-15-37t-37-15q-14 0-26.5 5.5T700-778l-60 72-60-72q-9-11-21.5-16.5T532-800q-22 0-37 15t-15 37q0 27 16 48.5t35 40.5l109 107ZM280-220l278 76 238-74q-5-9-14.5-15.5T760-240H558q-27 0-43-2t-33-8l-93-31 22-78 81 27q17 5 40 8t68 4q0-11-6.5-21T578-354l-234-86h-64v220ZM40-80v-440h304q7 0 14 1.5t13 3.5l235 87q33 12 53.5 42t20.5 66h80q50 0 85 33t35 87v40L560-60l-280-78v58H40Zm80-80h80v-280h-80v280Zm520-546Z"/></svg>
@@ -79,7 +81,7 @@
     <!---Features End------>
 
     <!---About start-->
-    <section class="about">
+    <section class="about" id="ab">
         <div class="section-center clearfix">
             <div class="about-img">
                 <div class="about-picture-container">
@@ -100,7 +102,7 @@
     <!---About End----->
 
     <!--Products start-->
-    <section class="products">
+    <section class="products" id="waf">
         <div class="section-center clearfix">
             <div class="product-info">
                 <div class="section-title">
@@ -132,7 +134,7 @@
     <!---Products End--->
 
     <!---Service Start-->
-    <section class="services">
+    <section class="services" id="ser">
         <div class="section-title services-title">
             <h3>Our Services</h3>
             <h2>What We Offer</h2>
@@ -178,7 +180,7 @@
     </section>    
     <!---Service End-->
     <!---contact start-->
-    <section class="contact">
+    <section class="contact" id="cont">
         <div class="section-center clearfix">
             <div class="contact-info">
                 <div class="contact-item">
@@ -230,5 +232,28 @@
         </div>
     </section>
     <!---Contact End-->
+     <!---Footer start-->
+    <footer class="footer">
+        <div class="section-center">
+            <div class="social-icons" style="color: var(--clr-secondary);">
+                <a href="#" class="social-icon">
+                   <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 12.05C19.9813 10.5255 19.5273 9.03809 18.6915 7.76295C17.8557 6.48781 16.673 5.47804 15.2826 4.85257C13.8921 4.2271 12.3519 4.01198 10.8433 4.23253C9.33473 4.45309 7.92057 5.10013 6.7674 6.09748C5.61422 7.09482 4.77005 8.40092 4.3343 9.86195C3.89856 11.323 3.88938 12.8781 4.30786 14.3442C4.72634 15.8103 5.55504 17.1262 6.69637 18.1371C7.83769 19.148 9.24412 19.8117 10.75 20.05V14.38H8.75001V12.05H10.75V10.28C10.7037 9.86846 10.7483 9.45175 10.8807 9.05931C11.0131 8.66687 11.23 8.30827 11.5161 8.00882C11.8022 7.70936 12.1505 7.47635 12.5365 7.32624C12.9225 7.17612 13.3368 7.11255 13.75 7.14003C14.3498 7.14824 14.9482 7.20173 15.54 7.30003V9.30003H14.54C14.3676 9.27828 14.1924 9.29556 14.0276 9.35059C13.8627 9.40562 13.7123 9.49699 13.5875 9.61795C13.4627 9.73891 13.3667 9.88637 13.3066 10.0494C13.2464 10.2125 13.2237 10.387 13.24 10.56V12.07H15.46L15.1 14.4H13.25V20C15.1399 19.7011 16.8601 18.7347 18.0985 17.2761C19.3369 15.8175 20.0115 13.9634 20 12.05Z"/>
+</svg>
+                   <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"/>
+<circle cx="18" cy="6" r="1"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"/>
+</svg>  
+                  <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19ZM8.339 17V10.667H6.333V17H8.339ZM7.336 9.667C8.036 9.667 8.667 9.036 8.667 8.336C8.667 7.636 8.036 7 7.336 7C6.636 7 6 7.636 6 8.336C6 9.036 6.636 9.667 7.336 9.667ZM17 17V13.333C17 11.6 15.733 10.667 14.267 10.667C13.267 10.667 12.667 11.267 12.333 11.733V10.667H10.333V17H12.333V13.333C12.333 12.733 12.733 12.333 13.333 12.333C13.933 12.333 14.333 12.733 14.333 13.333V17H16.333V13.333C16.333 12.067 15.267 11.333 14.267 11.333C13.267 11.333 12.333 12.067 12.333 13.333V17H17Z"/>
+</svg>
+    </a>
+            </div>
+            <h4 class="footer-text">© 2023 ToastieTales. All rights reserved.</h4>
+        </div>
+
+    </footer>
+    <!--Footer end-->
 </body>
 </html>
